@@ -100,7 +100,7 @@
                     "runOutputName": "<runOutputName>",
                     "artifactTags": {
                         "source": "azureVmImageBuilder",
-                        "baseosimg": "windows2019"
+                        "baseosimg": "windows10"
                     },
                     
                 }
