@@ -24,7 +24,7 @@
     "location": "[parameters('svclocation')]",
     "dependsOn": [],
     "tags": {
-        "imagebuilderTemplate": "windows2019",
+        "imagebuilderTemplate": "windows10",
         "userIdentity": "enabled"
             },
         "identity": {
@@ -40,15 +40,15 @@
 
         "vmProfile": 
                 {
-                "vmSize": "Standard_D1_v2",
+                "vmSize": "Standard_B2ms",
                 "osDiskSizeGB": 127
                 },
         
         "source": {
             "type": "PlatformImage",
-                "publisher": "MicrosoftWindowsServer",
-                "offer": "WindowsServer",
-                "sku": "2019-Datacenter",
+                "publisher": "MicrosoftWindowsDesktop",
+                "offer": "Windows-10",
+                "sku": "9h2-evd",
                 "version": "latest"
             
         },
@@ -89,19 +89,7 @@
                                 ],
                     "updateLimit": 20
                 }
-        ],
-        "distribute": 
-            [
-                {   "type":"ManagedImage",
-                    "imageId": "/subscriptions/<subscriptionID>/resourceGroups/<rgName>/providers/Microsoft.Compute/images/<imageName>",
-                    "location": "<region>",
-                    "runOutputName": "<runOutputName>",
-                    "artifactTags": {
-                        "source": "azVmImageBuilder",
-                        "baseosimg": "windows2019"
-                    }
-                }
-            ]
+        ]
         }
     }
 ]
