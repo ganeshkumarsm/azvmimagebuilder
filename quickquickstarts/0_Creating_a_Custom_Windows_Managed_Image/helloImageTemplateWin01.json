@@ -89,7 +89,8 @@
                                 ],
                     "updateLimit": 20
                 }
-        ]
+        ],
+        "distribute": {}
         }
     }
 ]
