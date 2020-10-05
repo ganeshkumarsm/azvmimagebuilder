@@ -102,9 +102,7 @@
                         "source": "azureVmImageBuilder",
                         "baseosimg": "windows10"
                     },
-                    "replicationRegions": [
-                     
-                    ]
+               
                 }
             ]
             }
